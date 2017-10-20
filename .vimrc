@@ -5,7 +5,10 @@ syntax on
 colorscheme monokai
 
 " Set tab spacing
+filetype plugin indent on
 set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Show line numbers
 set number
