@@ -24,3 +24,9 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " Fuzzy search for files
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Show filepath
+set laststatus=2
+
+" Netrw open file in right split
+let g:netrw_preview = 3
