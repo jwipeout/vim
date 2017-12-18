@@ -13,9 +13,6 @@ set expandtab
 " Show line numbers
 set number
 
-" Relative line numbers
-set relativenumber
-
 " 256 color
 set t_Co=256
 
@@ -28,5 +25,13 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Show filepath
 set laststatus=2
 
-" Netrw open file in right split
 let g:netrw_preview = 3
+
+" Enable slim syntax highlight
+autocmd BufNewFile,BufRead *.slim set filetype=slim
+
+" Disable auto auto commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Highlight searches
+set hlsearch
